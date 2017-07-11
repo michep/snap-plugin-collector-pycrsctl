@@ -1,0 +1,17 @@
+{
+    "nodes": "lux,nox",
+    "ora.nox.vip":"nox",
+    "ora.lux.vip":"lux",
+    "ora.LISTENER.lsnr": "all",
+    "ora.asm": "all",
+    "ora.LOG.dg": "all",
+    "ora.OCR_DATA.dg": "all",
+    "ora.VOTE.dg": "all",
+    "ora.mfms_rac.db": "all",
+    "ora.mfms_rac.mfms_batch.svc": "any",
+    "ora.mfms_rac.mfms_oltp.svc": "all",
+    "ora.LISTENER_SCAN1.lsnr": "any",
+    "ora.LISTENER_SCAN2.lsnr": "any",
+    "ora.scan1.vip": "any",
+    "ora.scan2.vip": "any"
+}

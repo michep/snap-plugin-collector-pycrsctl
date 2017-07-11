@@ -1,0 +1,4 @@
+CRS-4638: Oracle High Availability Services is online
+CRS-4535: Cannot communicate with Cluster Ready Services
+CRS-4529: Cluster Synchronization Services is online
+CRS-4533: Event Manager is online

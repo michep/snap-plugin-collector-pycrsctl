@@ -1,0 +1,134 @@
+NAME=ora.ARCHIVELOG.dg
+TYPE=ora.diskgroup.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.DATA.dg
+TYPE=ora.diskgroup.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.DATA_24X300X10K.dg
+TYPE=ora.diskgroup.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.DATA_72.dg
+TYPE=ora.diskgroup.type
+TARGET=ONLINE , ONLINE
+STATE=OFFLINE, OFFLINE
+
+NAME=ora.DATA_BIG_DSK_1.dg
+TYPE=ora.diskgroup.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.LISTENER.lsnr
+TYPE=ora.listener.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.LISTENER_SCAN1.lsnr
+TYPE=ora.scan_listener.type
+TARGET=ONLINE
+STATE=ONLINE on lux
+
+NAME=ora.LISTENER_SCAN2.lsnr
+TYPE=ora.scan_listener.type
+TARGET=ONLINE
+STATE=ONLINE on nox
+
+NAME=ora.LOG.dg
+TYPE=ora.diskgroup.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.OCR_DATA.dg
+TYPE=ora.diskgroup.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.VOTE.dg
+TYPE=ora.diskgroup.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.asm
+TYPE=ora.asm.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.cvu
+TYPE=ora.cvu.type
+TARGET=ONLINE
+STATE=ONLINE on nox
+
+NAME=ora.gsd
+TYPE=ora.gsd.type
+TARGET=OFFLINE, OFFLINE
+STATE=OFFLINE, OFFLINE
+
+NAME=ora.lux.vip
+TYPE=ora.cluster_vip_net1.type
+TARGET=ONLINE
+STATE=ONLINE on lux
+
+NAME=ora.mfms_rac.db
+TYPE=ora.database.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on nox, ONLINE on lux
+
+NAME=ora.mfms_rac.mfms_batch.svc
+TYPE=ora.service.type
+TARGET=ONLINE
+STATE=OFFLINE
+
+NAME=ora.mfms_rac.mfms_oltp.svc
+TYPE=ora.service.type
+TARGET=ONLINE , ONLINE
+STATE=OFFLINE, OFFLINE
+
+NAME=ora.mfmstest.db
+TYPE=ora.database.type
+TARGET=OFFLINE, OFFLINE
+STATE=OFFLINE, OFFLINE
+
+NAME=ora.mfmstest.mfmstest_oltp.svc
+TYPE=ora.service.type
+TARGET=OFFLINE
+STATE=OFFLINE
+
+NAME=ora.net1.network
+TYPE=ora.network.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.nox.vip
+TYPE=ora.cluster_vip_net1.type
+TARGET=ONLINE
+STATE=ONLINE on nox
+
+NAME=ora.oc4j
+TYPE=ora.oc4j.type
+TARGET=ONLINE
+STATE=ONLINE on nox
+
+NAME=ora.ons
+TYPE=ora.ons.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.registry.acfs
+TYPE=ora.registry.acfs.type
+TARGET=ONLINE       , ONLINE
+STATE=ONLINE on lux, ONLINE on nox
+
+NAME=ora.scan1.vip
+TYPE=ora.scan_vip.type
+TARGET=ONLINE
+STATE=ONLINE on lux
+
+NAME=ora.scan2.vip
+TYPE=ora.scan_vip.type
+TARGET=ONLINE
+STATE=ONLINE on nox
