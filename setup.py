@@ -6,5 +6,5 @@ setup(name='snap-plugin-collector-pycrsctl',
       install_requires = ['snap-plugin-lib-py>=1.0.10,<2'],
       url = "https://github.com/michep/snap-plugin-collector-pycrsctl",
       author = "Mike Chepaykin",
-      author_email="michep@mail.ru",
-      entry_points = {'console_scripts': ['snap-plugin-collector-pycrsctl=snap_pycrsctl.plugin:run']})
+      author_email="michep@mail.ru"
+      )
