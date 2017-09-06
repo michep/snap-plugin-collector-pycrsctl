@@ -57,7 +57,7 @@ _info "running: acbuild set-exec ./.venv/bin/python plugin"
 acbuild set-exec ./.venv/bin/python plugin.py
 
 _info "running: write ${__proj_dir}/dist/${__proj_name}.aci"
-mkdir -p "${__proj_dir}/dist/${__proj_name}"
+mkdir -p "${__proj_dir}/dist"
 acbuild write ${__proj_dir}/dist/${__proj_name}.aci
 
 #_info "running acbuild write ${__proj_dir}/dist/snap-plugin-collector-pysar/latest/linux/${HOSTTYPE}/snap-plugin-collector-pysar-linux-x86_64.aci"

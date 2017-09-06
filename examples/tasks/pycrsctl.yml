@@ -1,0 +1,40 @@
+---
+version: 1
+schedule:
+  type: "simple"
+  interval: "20s"
+max-failures: -1
+deadline: "10s"
+workflow:
+  collect:
+    metrics:
+      /mfms/crsctl/resource/*: {}
+    config:
+      /mfms/crsctl:
+        target: |
+          nodes: zun,zen
+          ora.DATA1.dg: all
+          ora.FLASHZEN.dg: zen
+          ora.FLASHZUN.dg: zun
+          ora.LISTENER.lsnr: all
+          ora.LISTENER_ARCH.lsnr: all
+          ora.LISTENER_SCAN1.lsnr: any
+          ora.LISTENER_SCAN2.lsnr: any
+          ora.LISTENER_SCAN3.lsnr: any
+          ora.MGMTLSNR: zen
+          ora.asm: all
+          ora.cvu: zun
+          ora.mbvmfms_rac.advisa_oltp.svc: zun
+          ora.mbvmfms_rac.db: all
+          ora.mbvmfms_rac.push_oltp.svc: zun
+          ora.mgmtdb: any
+          ora.net1.network: all
+          ora.oc4j: zun
+          ora.ons: all
+          ora.qiwi.db: zen
+          ora.scan1.vip: any
+          ora.scan2.vip: any
+          ora.scan3.vip: any
+          ora.zen.vip: zen
+          ora.zun.vip: zun
+        crsctl_path: /u01/app/oracle/product/12.2.0/grid/bin/crsctl
