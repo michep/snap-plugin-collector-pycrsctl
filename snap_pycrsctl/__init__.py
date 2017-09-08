@@ -51,7 +51,7 @@ class CrsctlCollector(snap.Collector):
                 items = results[result]
                 for item in items:
                     metric = self.create_metric(res, item)
-                    metric.data = int(result == 'True')
+                    metric.data = int(result == 'False')
                     metric.timestamp = ts_now
                     outmetrics.append(metric)
 
