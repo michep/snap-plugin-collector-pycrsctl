@@ -5,7 +5,6 @@ import time
 import subprocess as sp
 import snap_plugin.v1 as snap
 from crsctl import parser, checker
-from ruamel.yaml import YAML
 import logging
 
 LOG = logging.getLogger(__name__)
@@ -37,7 +36,8 @@ class CrsctlCollector(snap.Collector):
 
         if not self.initialized:
             self.crsctl_path = metrics[0].config['crsctl_path']
-            self.target = YAML().load(metrics[0].config['target'])
+            self.target = dict(metrics[0].config)
+            self.target.pop('crsctl_path')
             self.initialized = True
 
 
@@ -69,10 +69,6 @@ class CrsctlCollector(snap.Collector):
                 (
                     "crsctl_path",
                     snap.StringRule(required=True, default="crsctl")
-                ),
-                (
-                    "target",
-                    snap.StringRule(required=True)
                 )
             ]
         ])
